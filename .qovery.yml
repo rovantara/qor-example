@@ -1,0 +1,15 @@
+---
+application:
+  name: "qor-example"
+  project: "QOR Golang"
+  organization: "QoveryCommunity"
+databases:
+- type: "MYSQL"
+  name: "qor"
+  version: "8.0"
+routers:
+- name: "main-qor-example"
+  routes:
+  - application_name: "qor-example"
+    paths:
+    - "/*"
